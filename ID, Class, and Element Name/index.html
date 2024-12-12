@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS with ID, Class, and Element Name</title>
+    
+    <style>
+        /* Etiket ismi ile stil uygulama: Tüm p etiketlerine stil uygular */
+        /* Bu kural tüm <p> etiketlerine uygulanır. */
+        p {
+            color: #2E8B57; /* Yeşil renk */
+            font-size: 18px; /* Yazı boyutu */
+        }
+
+        /* Class Seçicisi (.) - Aynı stili birden fazla öğeye uygulamak için kullanılır
+           Class birden fazla öğeye atanabilir. 
+        */  
+        .highlight {
+            color: #FF6347; /* Domates kırmızısı renk */
+            font-weight: bold; /* Kalın yazı tipi */
+        }
+
+        /* ID Seçicisi (#) - Benzersiz bir öğe için stil
+           ID sadece bir öğeye atanabilir ve sayfadaki tek öğe olmalıdır. 
+        */ 
+        #main-heading {
+            color: #4CAF50; /* Yeşil renk */
+            text-align: center; /* Ortaya hizalama */
+        }
+    </style>
+</head>
+<body>
+    <!-- ID ile stil uygulama -->
+    <!-- Bu başlık yalnızca tek bir öğe olmalıdır çünkü ID benzersizdir -->
+    <h1 id="main-heading">This is the Main Heading (Styled with ID)</h1>
+    
+    <!-- Class ile stil uygulama -->
+    <!-- "highlight" class'ı birden fazla öğeye atanabilir. Burada bir <p> etiketi bu class'ı alır -->
+    <p class="highlight">This is a highlighted paragraph using class.</p>
+    
+    <!-- Etiket ismi ile stil uygulama -->
+    <!-- Tüm <p> etiketleri aynı stil ile şekillendirilir -->
+    <p>This is a regular paragraph styled with the element name (all p tags).</p>
+    
+    <!-- Aynı stilde ikinci bir <p> etiketi -->
+    <p>This is another paragraph, styled the same way as the first one, since it's a p tag.</p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properties Example</title>
+    <style>
+        /* Genel div stil */
+        div {
+            width: 400px;
+            height: 300px;
+            padding: 20px;
+            margin: 20px auto; /* Merkezi hizalama */
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, sans-serif; /* Yazı tipi */
+            
+            /* Arka plan rengi */
+            background-color: #ff6347; /* Domates kırmızısı */
+            
+            /* Arka plan resmi */
+            background-image: url('Ataturk1930s.jpg'); /* Resim dosyasının doğru yolda olduğundan emin olun */
+            
+            /* Arka plan resminin tekrar durumu */
+            background-repeat: no-repeat; /* Resim yalnızca bir kez gösterilir */
+            
+            /* Arka plan resminin konumu */
+            background-position: center; /* Resim ortalanır */
+            
+            /* Arka plan resminin boyutu (resmin orantılarını korur) */
+            background-size: contain; /* Resmin tamamını görünür kılar */
+            
+            /* Arka planın kaydırılma durumu */
+            background-attachment: scroll; /* Sayfa kaydırıldığında arka plan kayar */
+            
+            /* Arka planın görünme alanı */
+            background-clip: content-box; /* Arka plan yalnızca içerik kutusunda görünür */
+
+            /* Arka plan başlangıç noktası */
+            background-origin: padding-box; /* Arka plan, padding kutusundan başlar */
+            
+            /* Kenarlık ve gölge ekleme */
+            border-radius: 15px; /* Yumuşak köşeler */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        This is a div with various background properties.
+    </div>
+
+</body>
+</html>

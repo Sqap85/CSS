@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Divs with Different Styles</title>
+    <style>
+        /*
+        <div> (Division) HTML’de bir “blok” seviyesinde elementtir. Yani, sayfa içinde bir bölme (veya kutu) oluşturur. Genellikle diğer HTML elemanlarını gruplamak ve stil vermek amacıyla kullanılır. <div> kendisi görsel olarak herhangi bir içerik göstermez, ancak içerisindeki öğeleri düzenlemek ve onlara stil eklemek için kullanılır.
+
+<div> Kullanım Amacı:
+
+	1.	Gruplama: Birden fazla öğeyi (metin, resimler, butonlar vb.) tek bir konteynerda (kabın içinde) toplamak için kullanılır.
+	2.	Stil Uygulama: CSS ile stil vermek amacıyla kullanılabilir. Mesela bir sayfa düzeni oluşturmak için bir <div> içerisine başlık, paragraf ve resim eklenebilir.
+	3.	Düzen: Sayfa düzenini kontrol etmek için (örneğin, “grid” veya “flexbox” ile düzenleme) sıklıkla kullanılır.
+	4.	JavaScript ile Manipülasyon: JavaScript ile dinamik olarak içerik ekleyebilir, düzenleyebilir veya silebilirsiniz.
+
+<div> Özellikleri:
+
+	•	Blok Düzeyinde Eleman: Sayfada tam genişlik kaplar ve bir satıra yayılır. Bir <div> genellikle altındaki öğeleri yeni bir satırda başlatır.
+	•	Görsel Etki Yok: <div> elementinin kendisi görsel olarak herhangi bir şey göstermez. Ama içine stil (background-color, border, padding, vb.) ekleyerek görünür hale getirilebilir.
+
+        */
+        /* İlk div için stil */
+        .div1 {
+            width: 300px;
+            height: 150px;
+            background-color: #ff6347; /* Domates kırmızısı */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border: 3px solid #d35400; /* Turuncu kenarlık */
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* İkinci div için stil */
+        .div2 {
+            width: 300px;
+            height: 150px;
+            background-color: #2ecc71; /* Yeşil arka plan */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border: 3px dashed #27ae60; /* Yeşil kesik kesik kenarlık */
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        /* Üçüncü div için stil */
+        .div3 {
+            width: 300px;
+            height: 150px;
+            background-color: #3498db; /* Mavi arka plan */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border: 3px solid #2980b9; /* Daha koyu mavi kenarlık */
+            margin: 10px;
+            font-size: 22px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- İlk div -->
+    <div class="div1">
+        This is Div 1
+    </div>
+
+    <!-- İkinci div -->
+    <div class="div2">
+        This is Div 2
+    </div>
+
+    <!-- Üçüncü div -->
+    <div class="div3">
+        This is Div 3
+    </div>
+
+</body>
+</html>

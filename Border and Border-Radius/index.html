@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Border Properties</title>
+  <style>
+    .box {
+      width: 250px;                /* Kutunun genişliği */
+      height: 150px;               /* Kutunun yüksekliği */
+
+      /* BORDER: Elemanın kenarlarına çerçeve ekler */
+      border-width: 5px;           /* Kenarlık kalınlığı */
+      border-style: dashed;        /* Kenarlık tipi: dashed (kesikli çizgi) */
+      border-color: #FF5722;       /* Kenarlık rengi: turuncu */
+      
+      /* Daha detaylı kenarlık tanımı */
+      border-top: 5px solid #4CAF50;    /* Üst kenarlık: 5px düz yeşil */
+      border-right: 3px dotted #2196F3; /* Sağ kenarlık: 3px noktalı mavi */
+      border-bottom: 4px double #FFC107;/* Alt kenarlık: 4px çift çizgi sarı */
+      border-left: 6px groove #9C27B0;  /* Sol kenarlık: 6px oyuk mor */
+
+      /* BORDER-RADIUS: Elemanın köşelerini yuvarlatır */
+      border-radius: 25px;          /* Tüm köşeler 25px yuvarlatılmış */
+      /* Her köşe için ayrı yuvarlatma */
+      border-top-left-radius: 50px; /* Sol üst köşe */
+      border-top-right-radius: 15px;/* Sağ üst köşe */
+      border-bottom-right-radius: 30px;/* Sağ alt köşe */
+      border-bottom-left-radius: 10px; /* Sol alt köşe */
+
+      text-align: center;           /* Metni yatayda ortala */
+      line-height: 150px;           /* Metni dikeyde ortala */
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+
+       /* renk gecisi */
+     /* border-image: linear-gradient(to right, red, yellow) 1; */
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="box">All Border Properties</div>
+</body>
+</html>

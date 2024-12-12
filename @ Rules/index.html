@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All @ Rules</title>
+  <style>
+    /* @charset: Dosya karakter setini belirtir (En üstte olmalıdır) */
+    @charset "UTF-8";
+
+    /* @import: Başka bir CSS dosyasını dahil eder */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    /* @font-face: Özel bir yazı tipi tanımlar */
+    @font-face {
+      font-family: 'CustomFont';
+      src: url('https://example.com/myfont.woff2') format('woff2');
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif; /* İçe aktarılan font kullanılır */
+      margin: 0;
+      padding: 0;
+    }
+
+    .example {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+
+      /* Animasyon tanımı */
+      animation: exampleAnimation 3s infinite;
+    }
+
+    /* @keyframes: Animasyon tanımlar */
+    @keyframes exampleAnimation {
+      from {
+        background-color: red;
+      }
+      to {
+        background-color: yellow;
+      }
+    }
+
+    /* @media: Responsive tasarım için ekran boyutlarına göre stiller */
+    @media (max-width: 600px) {
+      .example {
+        background-color: lightblue;
+        width: 100%;
+      }
+    }
+
+    /* @supports: Tarayıcının desteklediği özelliklere göre stiller */
+    @supports (display: grid) {
+      .example {
+        display: grid;
+        place-items: center;
+      }
+    }
+
+    /* @page: Yazdırma stilleri */
+    @page {
+      margin: 1cm;
+    }
+  </style>
+</head>
+<body>
+  <div class="example">Hello, @Rules!</div>
+</body>
+</html>

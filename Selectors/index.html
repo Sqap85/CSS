@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* Element Selector: <p> etiketine stil uygular */
+    p {
+      color: red;
+    }
+
+    /* Class Selector: "container" sınıfına stil uygular */
+    .container {
+      background-color: lightblue;
+      padding: 20px;
+    }
+
+    /* ID Selector: "header" ID'sine stil uygular */
+    #header {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    /* Universal Selector: Sayfadaki tüm öğelere stil uygular */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Descendant Selector: <div> içindeki <p> etiketine stil uygular */
+    div p {
+      color: blue;
+    }
+
+    /* Child Selector: <div> öğesinin doğrudan altındaki <p> etiketine stil uygular */
+    div > p {
+      font-weight: bold;
+    }
+
+    /* Adjacent Sibling Selector: <h1> öğesinden hemen sonra gelen <p> etiketine stil uygular */
+    h1 + p {
+      font-style: italic;
+    }
+
+    /* General Sibling Selector: <h1> öğesinden sonra gelen tüm <p> etiketlerine stil uygular */
+    h1 ~ p {
+      color: green;
+    }
+
+    /* Attribute Selector: "type" özniteliği "text" olan <input> öğesine stil uygular */
+    input[type="text"] {
+      background-color: lightyellow;
+    }
+
+    /* Pseudo-class Selector: <a> etiketi üzerine gelindiğinde stil uygular */
+    a:hover {
+      color: purple;
+    }
+
+    /* Pseudo-class Selector: <a> etiketine tıklandığında stil uygular */
+    a:active {
+      color: orange;
+    }
+
+    /* Pseudo-class Selector: <input> öğesi focus olduğunda stil uygular */
+    input:focus {
+      border-color: pink;
+      background-color: pink;
+    }
+
+    /* Pseudo-class Selector: <p> öğesi ziyaret edildiğinde stil uygular */
+    p:visited {
+      color: darkgray;
+    }
+
+    /* Pseudo-element Selector: <p> etiketinin ilk satırına stil uygular */
+    p::first-line {
+      font-weight: bold;
+    }
+
+    /* Pseudo-element Selector: <p> etiketinin ilk harfine stil uygular */
+    p::first-letter {
+      font-size: 2em;
+      color: red;
+    }
+
+    /* Group Selector: Birden fazla seçiciyi gruplayarak stil uygular */
+    h1, h2, h3 {
+      color: navy;
+    }
+
+    /* Not Selector: "highlight" sınıfına sahip olmayan <div> öğelerine stil uygular */
+    div:not(.highlight) {
+      background-color: lightgray;
+    }
+
+    /* Nth-child Selector: Liste öğelerinin tek sıra numarasındaki öğelere stil uygular */
+    li:nth-child(odd) {
+      background-color: lightgreen;
+    }
+
+    /* Nth-child Selector: Liste öğelerinin çift sıra numarasındaki öğelere stil uygular */
+    li:nth-child(even) {
+      background-color: lightblue;
+    }
+
+    /* First-child Selector: Liste öğelerinin ilk öğesine stil uygular */
+    li:first-child {
+      font-weight: bold;
+      color: darkred;
+    }
+
+    /* Last-child Selector: Liste öğelerinin son öğesine stil uygular */
+    li:last-child {
+      font-style: italic;
+      color: darkblue;
+    }
+
+    /* Nth-last-child Selector: Liste öğelerinin sondan birinci öğesine stil uygular */
+    li:nth-last-child(1) {
+      font-style: underline;
+      color: purple;
+    }
+
+    /* Nth-of-type Selector: Aynı türdeki öğeler arasındaki sıraya göre stil uygular */
+    p:nth-of-type(2) {
+      color: teal;
+    }
+
+    /* First-of-type Selector: Aynı türdeki öğelerin ilkine stil uygular */
+    p:first-of-type {
+      font-size: 20px;
+    }
+
+    /* Last-of-type Selector: Aynı türdeki öğelerin sonuncusuna stil uygular */
+    p:last-of-type {
+      font-weight: bold;
+    }
+
+    /* Empty Selector: Boş olan öğelere stil uygular */
+    div:empty {
+      background-color: lightgray;
+    }
+
+    /* Only-child Selector: Sadece tek öğe olan öğeye stil uygular */
+    li:only-child {
+      color: red;
+    }
+
+    /* Only-of-type Selector: Aynı türde yalnızca bir öğe olan öğeye stil uygular */
+    p:only-of-type {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p>This is a paragraph with a class "container".</p>
+  </div>
+
+  <h1 id="header">Heading with ID "header"</h1>
+  <p>This is a paragraph inside a <div>.</p>
+  <div>
+    <p>This is a direct child paragraph of the div.</p>
+  </div>
+  <h1>Heading 1</h1>
+  <p>This paragraph is an adjacent sibling to the previous heading.</p>
+  <p>This paragraph is a general sibling to the previous heading.</p>
+
+  <input type="text" placeholder="Type something here">
+  <a href="#">Hover over me</a>
+
+  <p>This is the first line of a paragraph. It will be bold.</p>
+
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+  </ul>
+
+</body>
+</html>

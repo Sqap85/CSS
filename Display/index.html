@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Examples</title>
+  <style>
+    /* Block: Tüm satırı kaplar */
+    .block-example {
+      display: block;            /* Blok öğesi, tüm satırı kaplar. Yani, bir öğe bulunduğu satırda tek başına yer alır ve bir sonraki öğe yeni bir satırda başlar. */
+      background-color: lightblue;
+      margin-bottom: 10px;       /* Alt tarafta 10px boşluk */
+      padding: 10px;             /* İçerisine 10px padding */
+    }
+
+    /* Inline: İçeriği kadar yer kaplar ve aynı satırda kalır */
+    .inline-example {
+      display: inline;           /* Satır içi öğesi, içerik kadar yer kaplar. Öğenin genişliği, içeriği kadar olur ve diğer öğelerle aynı satırda yer alır. */
+      background-color: lightgreen;
+      margin-right: 10px;        /* Sağda 10px boşluk */
+      padding: 10px;             /* İçerisine 10px padding */
+    }
+
+    /* Inline-Block: Inline gibi davranır ama genişlik/yükseklik ayarlanabilir */
+    .inline-block-example {
+      display: inline-block;     /* Inline-Block öğesi, inline gibi davranır ancak genişlik ve yükseklik ayarlanabilir. Diğer inline öğelerle aynı satırda yer alır fakat boyutları ayarlanabilir. */
+      background-color: lightcoral;
+      width: 120px;              /* Genişlik: 120px */
+      height: 60px;              /* Yükseklik: 60px */
+      text-align: center;        /* Yatayda ortalama */
+      line-height: 60px;         /* Dikeyde ortalama */
+      margin-right: 10px;        /* Sağda 10px boşluk */
+    }
+
+    /* None: Öğeyi gizler */
+    .none-example {
+      display: none;             /* Bu öğe sayfada görünmez. Sayfada yer kaplamaz ve hiçbir şekilde görünmez. */
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    /* Flex: Esnek yerleşim sağlar */
+    .flex-example {
+      display: flex;             /* Flex container, öğeleri esnek bir şekilde yerleştirir. İç öğeler esnek bir şekilde hizalanır. */
+      background-color: lightyellow;
+      justify-content: space-around; /* Öğeler arasında eşit boşluk bırakır */
+      padding: 20px;             /* İçeriğe 20px padding */
+    }
+
+    /* Grid: Izgara tabanlı yerleşim sağlar */
+    .grid-example {
+      display: grid;             /* Grid container, satır ve sütun tabanlı düzen sağlar. */
+      background-color: lightpink;
+      grid-template-columns: repeat(3, 1fr); /* Üç eşit sütun oluşturur */
+      gap: 10px;                 /* Öğeler arasında 10px boşluk */
+      padding: 20px;             /* İçeriğe 20px padding */
+    }
+
+    /* Table: Tablo gibi davranır */
+    .table-example {
+      display: table;            /* Tablo gibi davranır. Öğeler, tablo düzeni gibi hizalanır. */
+      background-color: lightblue;
+      width: 100%;               /* Tablo, genişliği %100 yapacak şekilde ayarlanır */
+    }
+
+    /* List-Item: Liste öğesi gibi davranır */
+    .list-item-example {
+      display: list-item;        /* Liste öğesi gibi davranır. Yani, bu öğe bir liste öğesiymiş gibi yerleştirilir. */
+      background-color: lightgreen;
+      list-style-type: square;   /* Liste öğelerinin işaretçisi kare şeklinde olur */
+      padding: 10px;             /* İçeriğe 10px padding */
+    }
+  </style>
+</head>
+<body>
+  <!-- Block öğesi, tüm satırı kaplar -->
+  <div class="block-example">Block Example (Tüm satırı kaplar)</div>
+
+  <!-- Inline öğesi, içerik kadar yer kaplar ve aynı satırda kalır -->
+  <span class="inline-example">Inline Example (İçeriği kadar yer kaplar)</span>
+  <span class="inline-example">Another Inline</span>
+
+  <!-- Inline-Block öğesi, inline gibi davranır ama genişlik/yükseklik ayarlanabilir -->
+  <div class="inline-block-example">Inline-Block Example (Genişlik/Yükseklik ayarlanabilir)</div>
+
+  <!-- None öğesi, öğeyi gizler -->
+  <div class="none-example">This will not be displayed (Bu öğe gizlendi)</div>
+
+  <!-- Flex container, öğeleri esnek bir şekilde yerleştirir -->
+  <div class="flex-example">
+    <div>Flex Item 1</div>
+    <div>Flex Item 2</div>
+    <div>Flex Item 3</div>
+  </div>
+
+  <!-- Grid container, satır ve sütun tabanlı düzen sağlar -->
+  <div class="grid-example">
+    <div>Grid Item 1</div>
+    <div>Grid Item 2</div>
+    <div>Grid Item 3</div>
+  </div>
+
+  <!-- Table gibi davranan öğe -->
+  <div class="table-example">
+    <div>Table-like Element</div>
+    <div>Table-like Element</div>
+  </div>
+
+  <!-- Liste öğesi gibi davranan öğe -->
+  <ul>
+    <li class="list-item-example">List Item Example</li>
+    <li class="list-item-example">Another List Item</li>
+  </ul>
+</body>
+</html>

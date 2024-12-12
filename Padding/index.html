@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Padding Examples</title>
+  <style>
+    /* CSS’de padding, bir HTML öğesinin içeriği ile kenarları arasındaki iç boşluğu ifade eder. Bu özellik, içeriği kenarlardan uzaklaştırarak daha düzgün bir görünüm sağlar.
+
+    •	margin: Bir öğenin dış boşluğunu ayarlar (diğer öğelerle mesafesi).
+	•	padding: Bir öğenin içeriği ile kenarları arasındaki boşluğu ayarlar.
+    */
+    /* Tüm kenarlar için aynı padding */
+    .padding-all {
+      width: 200px;
+      background-color: #FF5722;
+      color: white;
+      padding: 20px; /* Tüm kenarlar: 20px */
+      margin: 10px;
+      text-align: center;
+    }
+
+    /* Farklı kenar değerleri */
+    .padding-different {
+      width: 200px;
+      background-color: lightblue;
+      padding: 10px 20px 30px 40px; /* Üst: 10px, Sağ: 20px, Alt: 30px, Sol: 40px */
+      margin: 10px;
+      text-align: center;
+    }
+
+    /* Üst-alt ve sağ-sol için farklı */
+    .padding-short {
+      width: 200px;
+      background-color: lightgreen;
+      padding: 15px 30px; /* Üst ve alt: 15px, Sağ ve sol: 30px */
+      margin: 10px;
+      text-align: center;
+    }
+
+    /* Kenar bazlı padding */
+    .padding-specific {
+      width: 200px;
+      background-color: lightcoral;
+      padding-top: 10px;    /* Üst: 10px */
+      padding-right: 15px; /* Sağ: 15px */
+      padding-bottom: 20px; /* Alt: 20px */
+      padding-left: 25px;  /* Sol: 25px */
+      margin: 10px;
+      text-align: center;
+    }
+
+    /* Responsive padding */
+    @media (max-width: 600px) {
+      .padding-responsive {
+        padding: 5%; /* Ekran genişliğine göre padding */
+        background-color: lightgoldenrodyellow;
+      }
+    }
+
+    .padding-responsive {
+      width: 200px;
+      padding: 10px;
+      background-color: lightgoldenrodyellow;
+      margin: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="padding-all">Padding: 20px</div>
+  <div class="padding-different">10px 20px 30px 40px</div>
+  <div class="padding-short">15px 30px</div>
+  <div class="padding-specific">Top: 10px, Right: 15px, Bottom: 20px, Left: 25px</div>
+  <div class="padding-responsive">Responsive Padding</div>
+</body>
+</html>

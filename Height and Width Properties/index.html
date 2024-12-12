@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Height and Width Properties</title>
+  <style>
+    .box {
+      width: 300px;             /* Genişlik: 300px */
+      height: 200px;            /* Yükseklik: 200px */
+      max-width: 500px;         /* Maksimum genişlik: 500px */
+      max-height: 400px;        /* Maksimum yükseklik: 400px */
+      min-width: 150px;         /* Minimum genişlik: 150px */
+      min-height: 100px;        /* Minimum yükseklik: 100px */
+
+      background-color: #FF5722; /* Arka plan rengi */
+      color: white;              /* Yazı rengi */
+      text-align: center;        /* Yazıyı yatayda ortala */
+      line-height: 200px;        /* Yazıyı dikeyde ortala */
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      border: 3px solid black;   /* Kenarlık */
+    }
+
+    /* Responsive özellikler */
+    @media (max-width: 600px) {
+      .box {
+        width: 100%;             /* Ekran küçükse genişlik %100 olsun */
+        height: auto;            /* Yükseklik otomatik olsun */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Height and Width Properties</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html> <!-- HTML5 dokümanı olarak başladığınızı belirler -->
+<html lang="en"> <!-- Sayfanın dili İngilizce olarak ayarlanmıştır -->
+<head>
+  <meta charset="UTF-8"> <!-- Sayfanın karakter setini UTF-8 olarak belirtir -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive tasarım için, cihazın ekran genişliğine göre ölçekleme yapar -->
+  <title>HTML Tags Example</title> <!-- Sayfa başlığı -->
+  <style>
+    /* CSS stilleri buraya yazılabilir */
+  </style>
+</head>
+<body>
+  <!-- Sayfa içeriği burada başlar -->
+  
+  <header> <!-- Sayfanın başlık kısmı (genellikle logo, başlık, navigasyon barı içerir) -->
+    <h1>HTML Tags Explanation</h1> <!-- Başlık etiketi, sayfanın ana başlığını belirtir -->
+  </header>
+  
+  <nav> <!-- Navigasyon menüsü için kullanılan etiket -->
+    <ul> <!-- Listeyi başlatır -->
+      <li><a href="#">Home</a></li> <!-- Liste elemanı, link -->
+      <li><a href="#">About</a></li> <!-- Liste elemanı, link -->
+      <li><a href="#">Contact</a></li> <!-- Liste elemanı, link -->
+    </ul>
+  </nav>
+  
+  <main> <!-- Sayfanın ana içeriği -->
+    <section> <!-- Bölüm, ana içerikte bir konuya odaklanır -->
+      <h2>Introduction to HTML</h2> <!-- Alt başlık -->
+      <p>HTML stands for Hypertext Markup Language, and it is the standard language used for creating web pages.</p> <!-- Paragraf -->
+    </section>
+    
+    <section> <!-- Diğer bir içerik bölümü -->
+      <h2>Basic HTML Tags</h2>
+      <ul> <!-- Liste -->
+        <li><strong>&lt;html&gt;</strong>: The root element of an HTML document.</li>
+        <li><strong>&lt;head&gt;</strong>: Contains metadata about the document.</li>
+        <li><strong>&lt;body&gt;</strong>: Contains the visible content of the document.</li>
+      </ul>
+    </section>
+    
+    <article> <!-- Bağımsız bir içerik parçası -->
+      <h3>What is an HTML Tag?</h3> <!-- Üçüncül başlık -->
+      <p>An HTML tag is a set of characters used to define elements in an HTML document. Tags are enclosed in angle brackets, e.g., <code>&lt;p&gt;</code> for a paragraph.</p> <!-- Paragraf -->
+    </article>
+    
+    <aside> <!-- Ana içerikten bağımsız olan, yardımcı içerikler -->
+      <h4>Did You Know?</h4> <!-- Dördüncül başlık -->
+      <p>HTML was created by Tim Berners-Lee in 1991.</p> <!-- Paragraf -->
+    </aside>
+  </main>
+  
+  <footer> <!-- Sayfanın alt kısmı (genellikle telif hakkı, iletişim bilgileri içerir) -->
+    <p>&copy; 2024 HTML Tutorial. All rights reserved.</p> <!-- Paragraf -->
+  </footer>
+  
+  <!-- Sayfa içeriği burada sona erer -->
+  
+  <script>
+    // JavaScript buraya yazılabilir
+  </script>
+</body>
+</html>
+<!-- 
+1. Yapısal Etiketler
+
+	•	<!DOCTYPE html>: HTML5 belgesi olduğunu belirtir.
+	•	<html>: HTML belgesinin başlangıcını belirtir.
+	•	<head>: Sayfa başlığını, karakter setini, stil sayfalarını ve meta verileri içerir.
+	•	<body>: Sayfanın görünen içeriğini tutar.
+	•	<title>: Sayfa başlığını belirtir (tarayıcı sekmesinde görünür).
+
+2. Metin İçeriği Etiketleri
+
+	•	<h1>, <h2>, <h3>, <h4>, <h5>, <h6>: Başlık etiketleri. <h1> en yüksek düzeyde başlık, <h6> ise en düşük düzeyde başlıktır.
+	•	<p>: Paragraf etiketidir. Metin paragraflarını tanımlar.
+	•	<br>: Satır sonu oluşturur. Tek başına kullanılır, kapanış etiketi yoktur.
+	•	<hr>: Yatay bir çizgi oluşturur. Sayfada bir bölüm ayırıcıdır.
+	•	<b>: Metni kalın yapar.
+	•	<i>: Metni italik yapar.
+	•	<u>: Metni altı çizili yapar.
+	•	<strong>: Önemli metni kalın yapar, anlam olarak daha güçlüdür.
+	•	<em>: Vurgulanan (italik) metni belirtir.
+	•	<mark>: Metni vurgular (sarılama).
+	•	<small>: Küçük yazı tipi boyutu.
+	•	<sub>: Alt simge (örneğin, kimya formüllerinde).
+	•	<sup>: Üst simge (örneğin, matematiksel ifadelerde).
+	•	<del>: Silinmiş metin, genellikle çizgili olarak görünür.
+	•	<ins>: Eklenmiş metin, genellikle altı çizili olarak görünür.
+	•	<cite>: Bir kaynağa atıfta bulunur.
+	•	<q>: Kısa alıntılar için kullanılır.
+	•	<blockquote>: Uzun alıntılar için kullanılır.
+
+3. Liste Etiketleri
+
+	•	<ul>: Sırasız liste (bullet point’lar).
+	•	<ol>: Sıralı liste (numaralı).
+	•	<li>: Liste öğesi.
+	•	<dl>: Tanımlama listesi (terim ve açıklamalar).
+	•	<dt>: Tanımlama listesindeki terim.
+	•	<dd>: Tanımlama listesindeki açıklama.
+
+4. Bağlantı Etiketleri
+
+	•	<a>: Bağlantı etiketi. href özniteliği ile bir URL’ye yönlendirir.
+	•	<nav>: Navigasyon bağlantılarını içeren öğe.
+
+5. Görsel Etiketleri
+
+	•	<img>: Resim ekler. src özniteliği ile kaynak belirlenir.
+	•	<picture>: Farklı çözünürlüklerde veya formatlarda resimlerin sunulmasını sağlar.
+	•	<figure>: Resim veya grafik gibi bağımsız içerik öğeleri için kullanılır.
+	•	<figcaption>: <figure> etiketiyle ilişkili başlık veya açıklama.
+
+6. Form Etiketleri
+
+	•	<form>: Form öğesini tanımlar.
+	•	<input>: Kullanıcıdan veri almak için kullanılır (metin, şifre, buton vb. türler).
+	•	<textarea>: Çok satırlı metin girişi alanı.
+	•	<button>: Buton oluşturur.
+	•	<label>: Form öğesine etiket atar.
+	•	<select>: Açılır liste oluşturur.
+	•	<option>: <select> öğesi için seçenekler.
+	•	<fieldset>: Form alanlarını gruplayarak düzenler.
+	•	<legend>: <fieldset> etiketine başlık ekler.
+	•	<datalist>: Kullanıcıya otomatik tamamlama seçenekleri sunar.
+
+7. Tablolar
+
+	•	<table>: Tablo oluşturur.
+	•	<tr>: Tablo satırı.
+	•	<th>: Tablo başlığı hücresi (kalın ve ortalanmış).
+	•	<td>: Tablo veri hücresi.
+	•	<caption>: Tabloya başlık ekler.
+	•	<thead>: Tablo başlık bölümü.
+	•	<tbody>: Tablo gövdesi.
+	•	<tfoot>: Tablo alt kısmı.
+
+8. Medya Etiketleri
+
+	•	<audio>: Ses dosyası ekler.
+	•	<video>: Video dosyası ekler.
+	•	<source>: Medya kaynaklarını belirtir, genellikle <audio> ve <video> ile kullanılır.
+	•	<track>: Video veya ses dosyasına altyazı ekler.
+
+9. Semantik Etiketler
+
+	•	<header>: Sayfanın başlık bölümü.
+	•	<footer>: Sayfanın alt kısmı.
+	•	<section>: Belirli bir içeriği gruplamak için kullanılır.
+	•	<article>: Bağımsız bir içerik parçası (makale gibi).
+	•	<aside>: Ana içerikten bağımsız, ek bilgi sunar (yan menü, alıntılar vb.).
+	•	<main>: Sayfanın ana içeriğini belirtir.
+	•	<details>: Detaylı bilgi için açılabilir bir bölüm.
+	•	<summary>: <details> etiketi içinde, açılır içeriğin başlığı.
+
+10. Diğer Etiketler
+
+	•	<span>: Küçük, satır içi öğeler için kullanılır.
+	•	<div>: Blok düzeyinde, genel bir kapsayıcı öğe.
+	•	<style>: Sayfa içi stil tanımlamaları için kullanılır.
+	•	<script>: JavaScript kodları ekler.
+
+11. HTML Yorumları
+
+	•	<!-- comment -->

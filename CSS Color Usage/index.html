@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Usage</title>
+    <style>
+        /* 1. Color Names */
+        /* Using standard color names */
+        .color-name {
+            color: red; /* Red color */
+        }
+
+        /* 2. Hex (Hexadecimal) Colors */
+        /* Using hex color codes */
+        .hex-color {
+            color: #FF6347; /* Tomato red (Hex) */
+        }
+
+        /* 3. RGB (Red, Green, Blue) */
+        /* Using RGB color model */
+        .rgb-color {
+            color: rgb(255, 99, 71); /* Tomato red (RGB) */
+        }
+
+        /* 4. RGBA (RGB + Alpha - Transparency) */
+        /* Using RGBA with transparency */
+        .rgba-color {
+            color: rgba(255, 99, 71, 0.5); /* Semi-transparent tomato red */
+        }
+
+        /* 5. HSL (Hue, Saturation, Lightness) */
+        /* Using HSL color model */
+        .hsl-color {
+            color: hsl(9, 100%, 64%); /* Tomato red (HSL) */
+        }
+
+        /* 6. HSLA (HSL + Alpha - Transparency) */
+        /* Using HSLA with transparency */
+        .hsla-color {
+            color: hsla(9, 100%, 64%, 0.5); /* Semi-transparent tomato red (HSLA) */
+        }
+
+        /* 7. Transparent (Opacity) */
+        /* Using transparent color */
+        .transparent-color {
+            color: transparent; /* Transparent color */
+        }
+
+        /* 8. Background Color */
+        /* Set background color for div element */
+        div {
+            background-color: #FFD700; /* Gold background color */
+            padding: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="color-name">This text is in red color (Color Names)</h1>
+    <h1 class="hex-color">This text is in tomato red (Hex)</h1>
+    <h1 class="rgb-color">This text is in tomato red (RGB)</h1>
+    <h1 class="rgba-color">This text is semi-transparent tomato red (RGBA)</h1>
+    <h1 class="hsl-color">This text is in tomato red (HSL)</h1>
+    <h1 class="hsla-color">This text is semi-transparent tomato red (HSLA)</h1>
+    <h1 class="transparent-color">This text is transparent (Transparent)</h1>
+    
+    <div>
+        <p>This is a <code>div</code> element with a gold background color.</p>
+    </div>
+</body>
+</html>
