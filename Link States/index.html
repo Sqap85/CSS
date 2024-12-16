@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link States Example</title>
+  <style>
+
+    a{
+      font-size: xx-large;
+      margin-left: 40%;
+    }
+
+    /* Unvisited link - link that hasn't been clicked */
+    /*ilk hali*/
+    a:link {
+      color: fuchsia;               /* Unvisited link color */
+      text-decoration: none;     /* No underline by default */
+      
+      
+    }
+
+    /* Visited link - link that has been clicked */
+    /* ziyaretten sonra */
+    a:visited {
+      color: purple;             /* Visited link color */
+    }
+
+    /* Hovered link - when the user hovers over the link */
+    /*uzerine gelindiginde*/
+    a:hover {
+      color: green;              /* Color when hovered */
+      text-decoration: underline; /* Underline when hovered */
+    }
+
+    /* Active link - when the link is being clicked */
+    /* tiklanildiginda */
+    a:active {
+      color: red;                /* Color when clicked */
+    }
+
+    /* Focused link - when the link is focused (via keyboard or click) */
+    a:focus {
+      outline: 2px solid blue;   /* Blue outline when focused */
+    }
+
+  </style>
+</head>
+<body>
+  <a href="https://example.com">Visit Example</a>
+</body>
+</html>
