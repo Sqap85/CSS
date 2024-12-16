@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menü Örneği</title>
+  <style>
+    /* Genel stil */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Menü stili */
+    .menu {
+      display: flex; /* Menü öğelerini yatayda sıralamak için flexbox kullanıyoruz */
+      justify-content: left; /* Menü öğelerini sola hizala */
+      padding: 10px;
+      background-color: #333;
+      list-style-type: none;
+      margin: 0;
+    }
+
+    /* Menü öğeleri */
+    .menu li {
+      position: relative; /* Dropdown menülerin doğru konumlanabilmesi için */
+      margin-right: 20px;
+    }
+
+    .menu a {
+      display: block;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      background-color: #333;
+      border-radius: 4px;
+    }
+
+    /* Menü öğesine hover efekti */
+    .menu a:hover {
+      background-color: #575757;
+    }
+
+    /* Dropdown menü gizli olacak */
+    .dropdown-content {
+      display: none; /* Başlangıçta gizli */
+      position: absolute; /* Menü öğesinin altında konumlanması için */
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Hover efekti: dropdown menü öğeleri */
+    .dropdown-content a:hover {
+      background-color: #575757;
+    }
+
+    /* Dropdown menü üzerine gelindiğinde görüntülenmesi */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Yatay Menü -->
+  <ul class="menu">
+    <li><a href="#home">Ana Sayfa</a></li>
+    <li><a href="#services">Hizmetler</a></li>
+    <li class="dropdown">
+      <a href="#">Hakkında</a>
+      <!-- Dropdown menü -->
+      <div class="dropdown-content">
+        <a href="#team">Takım</a>
+        <a href="#history">Tarihçe</a>
+        <a href="#values">Değerler</a>
+      </div>
+    </li>
+    <li><a href="#contact">İletişim</a></li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yatay Menü Örneği (ul li)</title>
+  <style>
+    /* Genel stil */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Menü stili */
+    .menu {
+      display: flex; /* Menü öğelerini yatayda sıralamak için flexbox kullanıyoruz */
+      justify-content: left; /* Menü öğelerini sola hizala */
+      padding: 10px; /* Üst ve alt boşluk */
+      background-color: #333; /* Menü arka plan rengi */
+      list-style-type: none; /* Liste noktalarını kaldır */
+      margin: 0; /* Menü etrafındaki varsayılan boşluğu kaldır */
+    }
+
+    /* Menü öğeleri */
+    .menu li {
+      margin-right: 20px; /* Menü öğeleri arasına boşluk ekle */
+    }
+
+    .menu a {
+      display: block; /* Bağlantıyı blok yapmak, böylece alt alta sıralanır */
+      color: white; /* Bağlantı metni rengi */
+      padding: 10px 15px; /* İç boşluk */
+      text-decoration: none; /* Bağlantı alt çizgisi yok */
+      font-size: 18px; /* Yazı boyutu */
+      background-color: #333; /* Arka plan rengi */
+      border-radius: 4px; /* Köşe yuvarlama */
+    }
+
+    /* Menü öğesine hover efekti */
+    .menu a:hover {
+      background-color: #575757; /* Üzerine gelindiğinde arka plan rengi değişir */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Yatay Menü -->
+  <ul class="menu">
+    <li><a href="#home">Ana Sayfa</a></li>
+    <li><a href="#services">Hizmetler</a></li>
+    <li><a href="#about">Hakkında</a></li>
+    <li><a href="#contact">İletişim</a></li>
+  </ul>
+
+</body>
+</html>
