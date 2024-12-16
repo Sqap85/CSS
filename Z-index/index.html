@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- z-index CSS özelliği, sayfa üzerindeki elemanların yığılma (stacking) sırasını belirler. Yani, sayfada birden fazla öğe birbiriyle örtüşüyorsa, z-index bu öğelerin hangi sırayla görüntüleneceğini kontrol eder. Yüksek z-index değerine sahip bir öğe, düşük z-index değerine sahip öğelerin üstünde görünür.
+
+    Temel Özellikler:
+    
+        1.	Yığılma sırası: z-index değeri yüksek olan öğe, değeri düşük olan öğelerin üstünde görünür.
+        2.	Yalnızca pozisyonlanmış öğelerde çalışır: Yani, position: relative, position: absolute, position: fixed, veya position: sticky gibi konumlandırma özelliklerine sahip öğelerde z-index etkili olur.
+        3.	Varsayılan değer: Pozisyonlanmamış öğeler için z-index değeri genellikle auto veya 0 olarak kabul edilir, bu da bu öğelerin doğal sırayla görüntüleneceği anlamına gelir. -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index Example</title>
+  <style>
+    /* .box1: Kırmızı kutu */
+    .box1 {
+      position: absolute;         /* Kutunun konumunu sayfa üzerinde sabitlemek için absolute */
+      left: 50px;                 /* Kutuyu soldan 50px mesafeye yerleştir */
+      top: 50px;                  /* Kutuyu üstten 50px mesafeye yerleştir */
+      width: 100px;               /* Kutunun genişliği */
+      height: 100px;              /* Kutunun yüksekliği */
+      background-color: red;      /* Kutunun arka plan rengi kırmızı */
+      z-index: 1;                 /* Z-index değeri 1, bu kutu diğerlerinden önce gelir */
+    }
+
+    /* .box2: Mavi kutu */
+    .box2 {
+      position: absolute;         /* Konumlandırmayı absolute ile yap */
+      left: 70px;                 /* Kutuyu soldan 70px mesafeye yerleştir */
+      top: 70px;                  /* Kutuyu üstten 70px mesafeye yerleştir */
+      width: 100px;               /* Kutunun genişliği */
+      height: 100px;              /* Kutunun yüksekliği */
+      background-color: blue;     /* Kutunun arka plan rengi mavi */
+      z-index: 2;                 /* Z-index değeri 2, bu kutu daha üstte */
+    }
+
+    /* .box3: Yeşil kutu */
+    .box3 {
+      position: absolute;         /* Konumlandırmayı absolute ile yap */
+      left: 90px;                 /* Kutuyu soldan 90px mesafeye yerleştir */
+      top: 90px;                  /* Kutuyu üstten 90px mesafeye yerleştir */
+      width: 100px;               /* Kutunun genişliği */
+      height: 100px;              /* Kutunun yüksekliği */
+      background-color: green;    /* Kutunun arka plan rengi yeşil */
+      z-index: 3;                 /* Z-index değeri 3, bu kutu en üstte olacak */
+    }
+
+    /* Resim ve yazı eklemek için bir kapsayıcı */
+    .image-container {
+      position: absolute;         /* Resim ve yazının pozisyonunu ayarlamak için absolute */
+      top: 10px;                  /* Sayfanın üstünden 10px mesafeye yerleştir */
+      right: 10px;                /* Sayfanın sağından 10px mesafeye yerleştir */
+      width: 300px;               /* Kapsayıcının genişliği */
+      height: 200px;              /* Kapsayıcının yüksekliği */
+    }
+
+    /* Resim */
+    .image-container img {
+      width: 100%;                /* Resim kapsayıcısının tüm genişliğini kaplasın */
+      height: 100%;               /* Resim kapsayıcısının tüm yüksekliğini kaplasın */
+      object-fit: cover;          /* Resmi kesmeden alanı dolduracak şekilde ayarla */
+    }
+
+    /* Resmin üzerine yazı eklemek için */
+    .text-overlay {
+      position: absolute;         /* Yazıyı kesin olarak yerleştirebilmek için absolute */
+      top: 50%;                   /* Yazıyı resmin ortasına yerleştir */
+      left: 50%;                  /* Yazıyı resmin ortasına yerleştir */
+      transform: translate(-50%, -50%);  /* Yazıyı tam ortalamak için */
+      color: white;               /* Yazı rengi beyaz */
+      font-size: 24px;            /* Yazı büyüklüğü */
+      font-weight: bold;          /* Yazıyı kalın yap */
+      z-index: 4;                 /* Yazının, resmin üzerinde görünmesini sağla */
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Z-index kutuları -->
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+
+  <!-- Resim üzerine yazı eklemek için kapsayıcı -->
+  <div class="image-container">
+    <img src="https://via.placeholder.com/300x200" alt="Sample Image">
+    <div class="text-overlay">This is an overlay text</div>
+  </div>
+
+</body>
+</html>
