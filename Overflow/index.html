@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overflow Example</title>
+  <style>
+    /* Ortalamak için genel stil */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Overflow: visible */
+    .visible {
+      width: 300px; /* Genişlik */
+      height: 100px; /* Yükseklik */
+      overflow: visible; /* Taşan içerik görünür */
+      background-color: lightblue;
+      border: 1px solid #333; /* Çerçeve */
+      padding: 10px;
+    }
+
+    /* Overflow: hidden */
+    .hidden {
+      width: 300px; /* Genişlik */
+      height: 100px; /* Yükseklik */
+      overflow: hidden; /* Taşan içerik gizlenir */
+      background-color: lightgreen;
+      border: 1px solid #333; /* Çerçeve */
+      padding: 10px;
+    }
+
+    /* Overflow: scroll */
+    .scroll {
+      width: 300px; /* Genişlik */
+      height: 100px; /* Yükseklik */
+      overflow: scroll; /* Taşan içerik için kaydırma çubuğu ekler */
+      background-color: lightcoral;
+      border: 1px solid #333; /* Çerçeve */
+      padding: 10px;
+    }
+
+    /* Overflow: auto */
+    .auto {
+      width: 300px; /* Genişlik */
+      height: 100px; /* Yükseklik */
+      overflow: auto; /* Taşan içerik için kaydırma çubuğu yalnızca gerektiğinde eklenir */
+      background-color: lightyellow;
+      border: 1px solid #333; /* Çerçeve */
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Overflow: visible -->
+  <div class="visible">
+    visible ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum quam a risus vestibulum, in interdum felis tincidunt. Fusce tincidunt ultricies magna, ut fermentum leo interdum a. Integer vel metus nec odio tempor sollicitudin sit amet id sapien. Cras tincidunt odio in nisi pretium, ac viverra metus placerat. Ut ornare sapien dui, non laoreet neque fringilla in. Sed id magna eu metus bibendum cursus. Duis sit amet efficitur ante, ac posuere sem.
+  </div>
+
+  <!-- Overflow: hidden -->
+  <div class="hidden">
+    hidden ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum quam a risus vestibulum, in interdum felis tincidunt. Fusce tincidunt ultricies magna, ut fermentum leo interdum a. Integer vel metus nec odio tempor sollicitudin sit amet id sapien. Cras tincidunt odio in nisi pretium, ac viverra metus placerat. Ut ornare sapien dui, non laoreet neque fringilla in. Sed id magna eu metus bibendum cursus. Duis sit amet efficitur ante, ac posuere sem.
+  </div>
+
+  <!-- Overflow: scroll -->
+  <div class="scroll">
+    scroll ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum quam a risus vestibulum, in interdum felis tincidunt. Fusce tincidunt ultricies magna, ut fermentum leo interdum a. Integer vel metus nec odio tempor sollicitudin sit amet id sapien. Cras tincidunt odio in nisi pretium, ac viverra metus placerat. Ut ornare sapien dui, non laoreet neque fringilla in. Sed id magna eu metus bibendum cursus. Duis sit amet efficitur ante, ac posuere sem. Pellentesque pretium urna ut lorem feugiat, non facilisis enim hendrerit.
+  </div>
+
+  <!-- Overflow: auto -->
+  <div class="auto">
+    auto ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum quam a risus vestibulum, in interdum felis tincidunt. Fusce tincidunt ultricies magna, ut fermentum leo interdum a. Integer vel metus nec odio tempor sollicitudin sit amet id sapien. Cras tincidunt odio in nisi pretium, ac viverra metus placerat. Ut ornare sapien dui, non laoreet neque fringilla in. Sed id magna eu metus bibendum cursus. Duis sit amet efficitur ante, ac posuere sem. Pellentesque pretium urna ut lorem feugiat, non facilisis enim hendrerit. Etiam tristique felis id purus condimentum.
+  </div>
+
+</body>
+</html>
